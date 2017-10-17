@@ -1,3 +1,5 @@
+//test
+
 class Main {
 	public static void main (String [] args) {
 /*	Kunde kunde1 = new Kunde();
