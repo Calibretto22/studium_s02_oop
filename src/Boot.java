@@ -57,7 +57,7 @@ void statusanzeigen() {
 	}
 
 void einlaufen (String heimat) {
-	//länge prüfen: kleiner 6 ist okay
+	// länge prüfen: kleiner 6 ist okay
 	// größer 15 wird automatisch abgelehnt
 	// dazwischen wird breite geprüft
 	// breite größer 10:  anforderung lotse
@@ -105,7 +105,13 @@ class Ruderboot extends Boot {
 		System.out.println("Eingabe Ruderboot-Typ: " );
 		typ_ruderboot = Tools.stringEingabe();
 		}//end of constructor
-// ein konstruktor mit parameterangabe wäre noch nett zum testen im main
+	Ruderboot (String bootsname_, int laenge_, int breite_, int verdraeng_, int taufdatum_, boolean seetauglichkeit_, String aktuellePosition_, int anzahlSitze, String ruderbootstyp){
+		// ein konstruktor mit parameterangabe 
+		super(bootsname_, laenge_, breite_, verdraeng_, taufdatum_, seetauglichkeit_, aktuellePosition_);
+		sitzplaetze = anzahlSitze;
+		typ_ruderboot = ruderbootstyp; 
+		}
+
 	
 	void einlaufen(String heimat) {//überschreiben der methode im boot, weil ruderboote anders einlaufen
 		System.out.println("Sie sind klein genug, weil sie rudern. Herzlich willkommen.");
