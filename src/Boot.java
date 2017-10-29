@@ -14,11 +14,11 @@ public class Boot {
 Boot(){ //parameterloser konstruktor - manuelle eingabe aller relevanten variablen	
 	System.out.println("Eingabe Bootsname: " );
 	nameBoat = Tools.stringEingabe();
-	System.out.println("Eingabe Bootslänge: " );
+	System.out.println("Eingabe Bootslï¿½nge: " );
 	length = Tools.intEingabe();
 	System.out.println("Eingabe Bootsbreite: " );
 	width = Tools.intEingabe();
-	System.out.println("Eingabe Wasserverdrängung: " );
+	System.out.println("Eingabe Wasserverdrï¿½ngung: " );
 	displacement = Tools.intEingabe();
 	System.out.println("Eingabe des Bootstaufedatums (Unix-Zeit): " );
 	cristening = Tools.intEingabe();
@@ -30,7 +30,7 @@ Boot(){ //parameterloser konstruktor - manuelle eingabe aller relevanten variabl
 }
 	
 Boot(String bootsname, int laenge, int breite, int verdraeng, int taufdatum, boolean seetauglichkeit, String aktuellePosition){
-	//Konstruktor für das komplette Boot, ohne lotsen
+	//Konstruktor fï¿½r das komplette Boot, ohne lotsen
 	//String, 4int, bool, String
 	nameBoat = bootsname;
 	length = laenge;
@@ -48,21 +48,21 @@ Boot(String bootsname, int laenge, int breite, int verdraeng, int taufdatum, boo
 	
 void statusanzeigen() {
 	System.out.println("Schiffsname: " + nameBoat);
-	System.out.println("Länge: " + length);
+	System.out.println("Lï¿½nge: " + length);
 	System.out.println("Breite: " + width);
-	System.out.println("Wasserverdängung: " + displacement);
+	System.out.println("Wasserverdï¿½ngung: " + displacement);
 	System.out.println("Schiffstaufe: " + cristening);
 	System.out.println("Seetauglichkeit: " + seatough);
 	System.out.println("aktueller Standort: " + currrentlocation);
 	}
 
 void einlaufen (String heimat) {
-	// länge prüfen: kleiner 6 ist okay
-	// größer 15 wird automatisch abgelehnt
-	// dazwischen wird breite geprüft
-	// breite größer 10:  anforderung lotse
+	// lï¿½nge prï¿½fen: kleiner 6 ist okay
+	// grï¿½ï¿½er 15 wird automatisch abgelehnt
+	// dazwischen wird breite geprï¿½ft
+	// breite grï¿½ï¿½er 10:  anforderung lotse
 	if (length > 15){
-		System.out.println("Sie sind zu groß. Wir können sie nicht einlaufen lassen.");
+		System.out.println("Sie sind zu groï¿½. Wir kï¿½nnen sie nicht einlaufen lassen.");
 		}
 	else
 		{	
@@ -75,11 +75,11 @@ void einlaufen (String heimat) {
 
 void lotseanfordern() {
 	if (width > 10 ){
-		System.out.println("Sie sind so breit, dass sie einen lotsen zum Einlaufen benötigen. ");
+		System.out.println("Sie sind so breit, dass sie einen lotsen zum Einlaufen benï¿½tigen. ");
 		lotseBenennen();
 	}
 	else {
-				System.out.println("Sie sind so mittelgroß aber schmal genug um ohne lotsen einlaufen zu können. GoGo!");
+				System.out.println("Sie sind so mittelgroï¿½ aber schmal genug um ohne lotsen einlaufen zu kï¿½nnen. GoGo!");
 	}
 	
 }
@@ -99,7 +99,7 @@ class Ruderboot extends Boot {
 	
 	Ruderboot (){ //parameterloser konstrukter der subklasse
 		super ();//ruft den variablenlosen konstrukor der superklasse auf
-		System.out.println("Eingabe Sitzplätze: " );
+		System.out.println("Eingabe Sitzplï¿½tze: " );
 		sitzplaetze = Tools.intEingabe();
 		
 		System.out.println("Eingabe Ruderboot-Typ: " );
@@ -113,14 +113,14 @@ class Ruderboot extends Boot {
 		}
 
 	
-	void einlaufen(String heimat) {//überschreiben der methode im boot, weil ruderboote anders einlaufen
+	void einlaufen(String heimat) {//ï¿½berschreiben der methode im boot, weil ruderboote anders einlaufen
 		System.out.println("Sie sind klein genug, weil sie rudern. Herzlich willkommen.");
 		currrentlocation = heimat;
 		}//end of ruderboot einlaufen
 
-	void statusanzeigen() {//erweiterung bzw. aktualisierung von statusanzeigen, speziell für ruderboote
+	void statusanzeigen() {//erweiterung bzw. aktualisierung von statusanzeigen, speziell fï¿½r ruderboote
 		super.statusanzeigen();
-		System.out.println("Anzahl der Sitzplätze: " + sitzplaetze);
+		System.out.println("Anzahl der Sitzplï¿½tze: " + sitzplaetze);
 		System.out.println("Typ des Ruderbootes: " + typ_ruderboot);
 		}
 	
@@ -131,11 +131,11 @@ class Ruderboot extends Boot {
 class Segelboot extends Boot{
 	int segelflaeche;
 	int anzahlMaste;
-	private int getrimmt; //für die methode trimmen
+	private int getrimmt; //fÃ¼r die methode trimmen
 	
 	Segelboot (){//parameterloser konstruktor
 		super();
-		System.out.println("Eingabe Segelfläche: " );
+		System.out.println("Eingabe SegelflÃ¤che: " );
 		segelflaeche = Tools.intEingabe();
 		System.out.println("Eingabe Mast-Anzahl: " );
 		anzahlMaste = Tools.intEingabe();	
@@ -147,15 +147,15 @@ class Segelboot extends Boot{
 	}
 	void statusanzeigen() {//erweiterung bzw. aktualisierung von statusanzeigen
 		super.statusanzeigen();
-		System.out.println("Segelfläche: " + segelflaeche);
+		System.out.println("SegelflÃ¤che: " + segelflaeche);
 		System.out.println("Anzahl Masten: " + anzahlMaste);
 		}
 	
 	void trimmen() {
 		if (segelflaeche < 3) {
-			System.out.println("Ihre Segelfläche ist zu klein. Trimmen lohnt sich nicht. " );
+			System.out.println("Ihre SegelflÃ¤che ist zu klein. Trimmen lohnt sich nicht. " );
 			}
-		else {//wenn die segefläche >=3 ist
+		else {//wenn die segeflÃ¤che >=3 ist
 			getrimmt = 1;
 			while (getrimmt <= anzahlMaste) {
 				System.out.println("Mast Nr. " + getrimmt + " wurde getrimmt.");
