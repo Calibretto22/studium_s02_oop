@@ -22,5 +22,6 @@ class Main {
 	System.out.println();
 	Ruderboot boot3 = new Ruderboot("Boaty McRuderboot", 3, 1, 2, 600, false, "Ruderhafen", 2, "Zweisitzer");
 	boot3.statusanzeigen();
+	boot3.einlaufen("Hamburg");
 	}
 }
