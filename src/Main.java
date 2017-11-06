@@ -10,7 +10,8 @@ class Main {
 	
 	kunde1.einkaufen(kunde1.kundennummer);
 	kunde1.ausgeben();*/
-		
+	
+/*		
 	Boot boot1 = new Boot("Boaty McBoatface",14,11,500,0, true, "Atlantis");
 	boot1.statusanzeigen();
 	boot1.einlaufen("Hamburg");
@@ -23,5 +24,8 @@ class Main {
 	Ruderboot boot3 = new Ruderboot("Boaty McRuderboot", 3, 1, 2, 600, false, "Ruderhafen", 2, "Zweisitzer");
 	boot3.statusanzeigen();
 	boot3.einlaufen("Humbug");
+	*/
+	Hoellenhund evilFifi = new Hoellenhund(2, 1, 50);
+	evilFifi.anzeige();
 	}
 }
