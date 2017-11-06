@@ -11,7 +11,7 @@ class Main {
 	kunde1.einkaufen(kunde1.kundennummer);
 	kunde1.ausgeben();*/
 	
-/*		
+/*	//bootskram	
 	Boot boot1 = new Boot("Boaty McBoatface",14,11,500,0, true, "Atlantis");
 	boot1.statusanzeigen();
 	boot1.einlaufen("Hamburg");
@@ -25,7 +25,17 @@ class Main {
 	boot3.statusanzeigen();
 	boot3.einlaufen("Humbug");
 	*/
+
+/*	//spaß mit höllenhhunden
 	Hoellenhund evilFifi = new Hoellenhund(2, 1, 50);
 	evilFifi.anzeige();
+	*/
+
+	//Fruchtfliege
+	Fruchtfliege dromel = new Fruchtfliege();
+	System.out.println("dromel.getFLateinischerName(): " + dromel.getFLateinischerName());
+	System.out.println("dromel.getFAlter(): " + dromel.getFAlter());
+	dromel.setFLateinischerName("drosophila melanogaster");
+	System.out.println("Namenskorrektur: " + dromel.getFLateinischerName());
 	}
 }
