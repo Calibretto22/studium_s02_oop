@@ -1,6 +1,7 @@
 class Main {
 	public static void main (String [] args) {
-/*	Kunde kunde1 = new Kunde();
+/*	//kundenkram
+	Kunde kunde1 = new Kunde();
 	kunde1.vorname = "Hans";
 	kunde1.name = " Meiser";
 	kunde1.GebDatum = "31.02.2001";
@@ -38,8 +39,13 @@ class Main {
 	dromel.setFLateinischerName("drosophila melanogaster");
 	System.out.println("Namenskorrektur: " + dromel.getFLateinischerName());*/
 	
-	//Glückszahl
+/*	//Glückszahl
 	Glueckszahl gz = new Glueckszahl("Hans-Peter","Petrowisch");
-	System.out.println("Die heutige Glückszahl von " + gz.vorname + " " + gz.nachname + " lautet " + gz.glueckszahl);
+	System.out.println("Die heutige Glückszahl von " + gz.vorname + " " + gz.nachname + " lautet " + gz.glueckszahl);*/
+	
+	//Ausgabefenster
+	SimpleGUI fenster = new SimpleGUI();
+	fenster.showInputAufforderung();
+	fenster.showResponse("Die Quersumme lautet: " + fenster.getQS());
 	}
 }
