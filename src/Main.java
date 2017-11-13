@@ -31,11 +31,15 @@ class Main {
 	evilFifi.anzeige();
 	*/
 
-	//Fruchtfliege
+/*	//Fruchtfliege
 	Fruchtfliege dromel = new Fruchtfliege();
 	System.out.println("dromel.getFLateinischerName(): " + dromel.getFLateinischerName());
 	System.out.println("dromel.getFAlter(): " + dromel.getFAlter());
 	dromel.setFLateinischerName("drosophila melanogaster");
-	System.out.println("Namenskorrektur: " + dromel.getFLateinischerName());
+	System.out.println("Namenskorrektur: " + dromel.getFLateinischerName());*/
+	
+	//Glückszahl
+	Glueckszahl gz = new Glueckszahl("Hans-Peter","Petrowisch");
+	System.out.println("Die heutige Glückszahl von " + gz.vorname + " " + gz.nachname + " lautet " + gz.glueckszahl);
 	}
 }
