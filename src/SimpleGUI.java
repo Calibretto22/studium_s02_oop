@@ -34,7 +34,7 @@ public class SimpleGUI {
 		querSum = querSum + zahl % 10;
 		zahl = zahl / 10 ;
 			}
-	querSum = (querSum <10) ? querSum : querSumme(querSum);
+	//querSum = (querSum <10) ? querSum : querSumme(querSum); //rekursiver aufruf für absolute quersumme - ist hier nicht gewollt
 	return querSum;
 	}
 	
