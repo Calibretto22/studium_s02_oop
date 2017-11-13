@@ -16,7 +16,7 @@ public class Tools {
 		try {
 			eingebi = Integer.valueOf(eingebs).intValue();
 		} catch (Exception e) {
-			System.out.println("Keine Zahl - es wird 0 zurückgegeben.");
+			System.out.println("Keine Zahl - es wird 0 zurÃ¼ckgegeben.");
 			eingebi =0;
 		}
 	return eingebi;
@@ -47,7 +47,7 @@ public class Tools {
 		try {
 			eingebi = Double.parseDouble(eingebs);
 		} catch (Exception e) {
-			System.out.println("Fließkommazahl - Punkt statt Komma");
+			System.out.println("FlieÃŸkommazahl - Punkt statt Komma");
 			eingebi =0;
 		}
 	return eingebi;
