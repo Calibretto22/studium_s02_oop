@@ -43,9 +43,16 @@ class Main {
 	Glueckszahl gz = new Glueckszahl("Hans-Peter","Petrowisch");
 	System.out.println("Die heutige Glückszahl von " + gz.vorname + " " + gz.nachname + " lautet " + gz.glueckszahl);*/
 	
-	//Ausgabefenster
+/*	//Ausgabefenster
 	SimpleGUI fenster = new SimpleGUI();
 	fenster.showInputAufforderung();
-	fenster.showResponse("Die Quersumme lautet: " + fenster.getQS());
+	fenster.showResponse("Die Quersumme lautet: " + fenster.getQS());*/
+		
+	//durchschnitt aus array - ABlatt7_A1
+	ABlatt7_A1 arraySpass = new ABlatt7_A1();
+	arraySpass.duchschnitt();
+	arraySpass.stellensumme();
+	
+		
 	}
 }
