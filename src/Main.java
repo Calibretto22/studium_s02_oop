@@ -53,12 +53,15 @@ class Main {
 	arraySpass.duchschnitt();
 	arraySpass.stellensumme();*/
 		
-	//Buchverwaltung
+/*	//ABlatt7_A3_Buchverwaltung
 	ABlatt7_A3_Buchverwaltung mylib = new ABlatt7_A3_Buchverwaltung(true);
 	mylib.showLibrary();
 	//mylib.showDickeBuecher(300);
 	mylib.showGenre("Roman");
-	System.out.println("alle Seiten: " + mylib.getAllSeiten());
-		
+	System.out.println("alle Seiten: " + mylib.getAllSeiten());*/
+	
+	// ABlatt7_A4 Kunstgalerie
+		new ABlatt7_A4_Galerie(true).galerieausgabe();//constructor with true makes my autofill go round
+
 	}
 }

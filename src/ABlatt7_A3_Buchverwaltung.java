@@ -32,11 +32,13 @@ public class ABlatt7_A3_Buchverwaltung {
 		}
 		return pages;
 	}
+	
 	void showDickeBuecher (int whatIsDick) {
 		for (int i = 0; i < bucharray.length; i++) {
 			if (bucharray[i].seitenzahl > whatIsDick) {
 				bucharray[i].anzeigenBuch();}
-		}}
+		}/*end for-loop*/}/*end method*/
+	
 	void showGenre (String genre) {
 		for (int i = 0; i < bucharray.length; i++) {
 			if (bucharray[i].genre.equals(genre)) {
@@ -44,6 +46,6 @@ public class ABlatt7_A3_Buchverwaltung {
 		}/*end for-loop*/}/*end method*/
 	
 		
-}
+}/*end class*/
 
 

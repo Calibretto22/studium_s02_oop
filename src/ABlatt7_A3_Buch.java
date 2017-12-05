@@ -27,8 +27,4 @@ public class ABlatt7_A3_Buch {
 		System.out.println("Autor: " + autor);
 	}
 	
-   
-
-
-
-	}
+}
