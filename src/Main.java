@@ -48,11 +48,17 @@ class Main {
 	fenster.showInputAufforderung();
 	fenster.showResponse("Die Quersumme lautet: " + fenster.getQS());*/
 		
-	//durchschnitt aus array - ABlatt7_A1
+/*	//durchschnitt aus array - ABlatt7_A1
 	ABlatt7_A1 arraySpass = new ABlatt7_A1();
 	arraySpass.duchschnitt();
-	arraySpass.stellensumme();
-	
+	arraySpass.stellensumme();*/
+		
+	//Buchverwaltung
+	ABlatt7_A3_Buchverwaltung mylib = new ABlatt7_A3_Buchverwaltung(true);
+	mylib.showLibrary();
+	//mylib.showDickeBuecher(300);
+	mylib.showGenre("Roman");
+	System.out.println("alle Seiten: " + mylib.getAllSeiten());
 		
 	}
 }
