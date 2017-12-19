@@ -60,8 +60,13 @@ class Main {
 	mylib.showGenre("Roman");
 	System.out.println("alle Seiten: " + mylib.getAllSeiten());*/
 	
-	// ABlatt7_A4 Kunstgalerie
+/*	// ABlatt7_A4 Kunstgalerie
 		new ABlatt7_A4_Galerie(true).galerieausgabe();//constructor with true makes my autofill go round
+		*/
 
+	// ABlatt8_A2_Vogel
+	Adler piepmatz = new Adler();
+	piepmatz.anzeigen();
+	piepmatz.singen();
 	}
 }
