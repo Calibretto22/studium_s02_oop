@@ -64,9 +64,23 @@ class Main {
 		new ABlatt7_A4_Galerie(true).galerieausgabe();//constructor with true makes my autofill go round
 		*/
 
-	// ABlatt8_A2_Vogel
+/*	// ABlatt8_A2_Vogel
 	Adler piepmatz = new Adler();
 	piepmatz.anzeigen();
 	piepmatz.singen();
-	}
-}
+	}*/
+		
+	// ABlatt9_A1_Dreiecke
+		ABlatt9_1_DreieckGleichseitig gse = new ABlatt9_1_DreieckGleichseitig(3.0);
+		System.out.println("die Höhe des Gleichseitenecks lautet: "  + gse.berechneHoehe());
+		System.out.println("der Umfang des Gleichseitenecks lautet: "  + gse.berechneUmfang());
+		System.out.println("die Fläche des Gleichseitenecks lautet: "  + gse.berechneFlaechenInhalt(gse.berechneHoehe()));
+
+		ABlatt9_1_DreieckGleichschenklig dse = new ABlatt9_1_DreieckGleichschenklig(4.0, 2.0);
+		System.out.println("die Höhe des Gleichschenkelecks lautet: "  + dse.berechneHoehe());
+		System.out.println("der Umfang des Gleichschenkelecks lautet: "  + dse.berechneUmfang());
+		System.out.println("die Fläche des Gleichseitenecks lautet: "  + dse.berechneFlaechenInhalt(dse.berechneHoehe()));
+		
+
+	
+	}}
